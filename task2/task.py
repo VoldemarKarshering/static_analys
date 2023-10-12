@@ -35,6 +35,10 @@ def task(file_name):
         for st in res:
             if st[4]:
                 st[4] -= 1
+        with open('task2.csv', "w", newline='') as file:
+            writer = csv.writer(file, delimiter=';')
+            for st in res:
+                writer.writerow(st)
         return res
 
 if __name__ == "__main__":
