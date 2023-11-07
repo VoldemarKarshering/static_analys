@@ -49,9 +49,9 @@ def task():
     table_of_prop = make_table_of_prop(table)
     table_of_usl_prop = make_table_of_usl_prop(table)
     H_b, H_a_b = h_b(table_of_prop), h_a_b(table_of_prop, table_of_usl_prop)
-    return(h_a(table_of_prop),
+    return(h_ab(table_of_prop),
+           h_a(table_of_prop),
            H_b,
-           h_ab(table_of_prop),
            H_a_b,
            i_ab(H_b, H_a_b))
 
